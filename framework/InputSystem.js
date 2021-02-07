@@ -1,14 +1,12 @@
-window.addEventListener('keydown', () => {
-    inputSystem.isKeyPressed[e.keyCode] = true;
+window.addEventListener('keydown', (e) => {
+    inputSystem.isKeyPressed[e.code] = true;
 });
-window.addEventListener('keyup', () => {
-    inputSystem.isKeyPressed[e.keyCode] = false;
+window.addEventListener('keyup', (e) => {
+    inputSystem.isKeyPressed[e.code] = false;
 });
 
 class InputSystem{
     constructor() {
-        this.mouseX = 0;
-        this.mouseY = 0;
         this.isKeyPressed = [];
     }
 
@@ -21,13 +19,7 @@ class InputSystem{
         }
     }
     
-    get mouseX(){
-        return this.mouseX;
-    }
-
-    get mouseY(){
-        return this.mouseY;
-    }
+    
 }
 
 const inputSystem = new InputSystem();
