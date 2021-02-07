@@ -10,8 +10,8 @@
   <script defer src="./framework/GameFramework.js"></script>
   <script defer src="./framework/GameStateManager.js"></script>
   <script defer src="./framework/Init.js"></script>
+  <script defer src="./OtherPlayer.js"></script>
   
- 
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -41,4 +41,8 @@
 <body oncontextmenu="return false">
     <canvas width="300" height="400" id="canvas">HTML CANVAS를 지원하지 않습니다.</canvas>
 </body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
 </html>

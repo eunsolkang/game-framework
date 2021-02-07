@@ -17,15 +17,18 @@ class Player{
     }
     moveLeft(){
         this.x -= 10;
+        socket.emit('move', {x : this.x, y: this.y});
     }
     moveRight(){
         this.x += 10;
+        socket.emit('move', {x : this.x, y: this.y});
     }
     moveUp(){
         this.y -= 10;
+        socket.emit('move', {x : this.x, y: this.y});
     }
     moveDown(){
         this.y += 10;
+        socket.emit('move', {x : this.x, y: this.y});
     }
 }
-const player = new Player();

@@ -10,5 +10,6 @@ function onGameInit(){
     canvas.setAttribute('height', window.innerHeight);
     canvasWidth = window.innerWidth;
     canvasHeight = window.innerHeight;
+
    gameLoop();
 }

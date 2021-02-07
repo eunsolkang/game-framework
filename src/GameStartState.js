@@ -3,12 +3,12 @@ class GameStartState{
 
     }
     init(){
-
+        
     }
     render(){
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
-
+        
         ctx.fillStyle = 'white';
         ctx.font = '40px Arial';
         ctx.fillText('시작!', 100, 100);

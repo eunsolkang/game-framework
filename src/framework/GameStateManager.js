@@ -5,6 +5,7 @@ class GameStateManager{
     
     onChangeGameState(gameState){
         this.gameState = gameState;
+        this.gameState.init();
     }
 
     render(){
